@@ -1,4 +1,3 @@
-import static java.lang.System.*;
 import java.util.Calendar;
 
 public class Data {
@@ -90,6 +89,15 @@ public class Data {
             ano++;
         }
     }
+  }
+  public int compareTo(Data data){
+    if(this.ano < data.ano) return -1;
+    if(this.ano > data.ano) return 1;
+    if(this.mes < data.mes) return -1;
+    if(this.mes > data.mes) return 1;
+    if(this.dia < data.dia) return -1;
+    if(this.dia > data.dia) return -1;
+    return 0;
   }
 }
 

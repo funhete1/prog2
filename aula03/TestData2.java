@@ -17,20 +17,20 @@ public class TestData2 {
       out.printf("%s: %s\n", d, d.extenso());
     }
     
-    //for (Data d1: dates) {
-    //  out.println();
-    //  for (Data d2: dates) {
-    //    int c = d1.compareTo(d2);
-    //    String op;
-    //    if (c < 0)
-    //      op = "<";
-    //    else if (c > 0)
-    //      op = ">";
-    //    else
-    //      op = "=";
-    //   out.printf("%s %s %s\n", d1, op, d2);
-    //  }
-    //}
+    for (Data d1: dates) {
+     out.println();
+     for (Data d2: dates) {
+       int c = d1.compareTo(d2);
+       String op;
+       if (c < 0)
+         op = "<";
+       else if (c > 0)
+         op = ">";
+       else
+         op = "=";
+      out.printf("%s %s %s\n", d1, op, d2);
+     }
+    }
     
   }
 
