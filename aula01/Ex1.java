@@ -9,7 +9,7 @@ class Ex01{
         String operation = in.next();
         double b = in.nextDouble();
 
-        if(!arrayContains(operations, operation)) {
+        if(!arrayContains(operation)) {
             System.err.println("Operation not included in this calculator!");
         }
 
@@ -17,9 +17,9 @@ class Ex01{
         System.out.println("Result " + result);
     }
 
-    static boolean arrayContains(String[] array, String element) {
-        for (int i = 0; i < array.length; i++) {
-            if(array[i].equals(element)) return true;
+    static boolean arrayContains(String element) {
+        for (int i = 0; i < operations.length; i++) {
+            if(operations[i].equals(element)) return true;
         }
         return false;
     }
