@@ -13,6 +13,16 @@ public class Tarefa {
         return String.format("%s\t%s\t%s", inicio, fim, texto);
     }
     
+    public boolean intersecta(Tarefa a){
+        if(
+            (inicio.compareTo(a.inicio())>=0&&inicio.compareTo(a.fim())<=0)||
+            (fim.compareTo(a.inicio())>=0&&fim.compareTo(a.fim())<=0))
+        {
+            return true;
+        }
+        return false;
+    }
+    
     public Data inicio(){return inicio;} ;
     public Data fim(){return fim;} ;
     public String texto(){return texto;} ;

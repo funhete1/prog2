@@ -12,7 +12,7 @@ public class Data {
     mes = today.get(Calendar.MONTH) + 1;
     ano = today.get(Calendar.YEAR);
   }
-
+	
   /** Inicia a data a partir do dia, mes e ano dados. */
   public Data(int dia, int mes, int ano) {
     this.dia = dia;

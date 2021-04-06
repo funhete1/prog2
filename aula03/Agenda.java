@@ -1,8 +1,5 @@
 public class Agenda{
-    private Tarefa[] tarefa; 
-    public Agenda(){
-        tarefa = new Tarefa[1000];
-    }
+    private Tarefa[] tarefa = new Tarefa[1000]; 
     
     public void novaTarefa(Tarefa t){
         for (int i = 0; i < tarefa.length; i++) {
@@ -29,4 +26,16 @@ public class Agenda{
             System.out.printf("Conteudo da tarefa %d: %s\n", i, tarefa[i].toString());
         }
     }
+    public Agenda filtra (Data d1, Data d2){
+        Agenda f = new Agenda();
+        for (int i = 0; i < tarefa.length; i++) {
+            if(tarefa[i] ==  null)break;
+            Tarefa inter = new Tarefa(d1, d1, ".");
+            if(tarefa[i].intersecta(inter)){
+                f.novaTarefa(tarefa[i]);
+            }
+        }
+        return f;
+    }
+
 }
