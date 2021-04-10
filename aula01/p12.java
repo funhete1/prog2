@@ -1,10 +1,6 @@
-import static java.lang.System.*;
 import java.util.Scanner;
+import static java.lang.System.*;
 
-
-
-// Complete o programa para calcular a nota final NF de
-// um aluno de Programação 2 (2019-2020) na época normal.
 public class p12
 {
   public static final Scanner in = new Scanner(System.in);

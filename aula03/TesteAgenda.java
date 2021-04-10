@@ -10,11 +10,11 @@ public class TesteAgenda
     agenda.novaTarefa(new Tarefa(new Data(9,5,20126), new Data(9,5,2012), "Reuniao equipa"));
     agenda.novaTarefa(new Tarefa(new Data(22,3,2012), new Data(27,3,2012), "Projeto"));
     agenda.escrever();
-    // out.println();
-    // Data d1 = new Data(27,3,2012);
-    // Data d2 = new Data(15,6,2012);
-    // Agenda agenda2 = agenda.filtra(d1, d2);
-    // out.printf("Tarefas de %s a %s:\n", d1, d2);
-    // agenda2.escrever();
+    out.println();
+    Data d1 = new Data(27,3,2012);
+    Data d2 = new Data(15,6,2012);
+    Agenda agenda2 = agenda.filtra(d1, d2);
+    out.printf("Tarefas de %s a %s:\n", d1, d2);
+    agenda2.escrever();
   }
 }

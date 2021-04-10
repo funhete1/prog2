@@ -46,8 +46,7 @@ public class TestHouses
 
     out.println("\nÁreas por divisão: ");
     for(int i=0; i<h.size(); i++)
-      out.println(i + " - " + 
-          h.room(i).roomType() + ": " + h.room(i).area());
+      out.println(i + " - " + h.room(i).roomType() + ": " + h.room(i).area());
 
     out.println("\nNúmero de divisões de cada tipo");
     RoomTypeCount [] roomCounts = h.getRoomTypeCounts();

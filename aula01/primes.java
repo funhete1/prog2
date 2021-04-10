@@ -1,5 +1,5 @@
-import static java.lang.System.*;
 import java.util.Scanner;
+import static java.lang.System.*;
 
 public class primes {
   public static final Scanner in = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class primes {
   public static boolean isPrime(int n) {
     boolean tf = true;
     if(n > 5){
-      tf = (n % 3 != 0 || n % 5 != 0) ? true : false;
+      tf = (n % 3 != 0 && n % 5 != 0 && n % 2 != 0) ? true : false;
     }
     else{
       tf = (n != 4) ? true : false;
