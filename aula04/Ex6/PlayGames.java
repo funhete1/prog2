@@ -27,6 +27,7 @@ public class PlayGuessGame {
     if (args.length == 2) {
       // parse arguments...
     }
+    
     GuessGame game = new GuessGame(min, max);
 
     out.println();
