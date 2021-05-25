@@ -60,7 +60,7 @@ public class JogoDoGalo {
     assert ultimoJogador() != VAZIO;
 
     boolean result;
-
+    
        // vertical |
     result = contaIgual(ultimaLin, ultimaCol, -1, 0) +
              1 +

@@ -16,7 +16,7 @@ public class JogaJogoDoGalo {
       jogo.mostraTabuleiro();
     }
     System.out.println();
-    if (!jogo.ultimoJogadorGanhou()) {
+    if (jogo.ultimoJogadorGanhou()) {
         System.out.println("Jogador "+jogo.ultimoJogador()+" ganhou!");
     } else {
         System.out.println("Jogo empatado!");
