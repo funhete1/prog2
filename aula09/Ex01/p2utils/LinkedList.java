@@ -6,8 +6,7 @@ public class LinkedList<E> {
   private Node<E> last = null;
   private int size = 0;
 
-  /**
-   * {@code LinkedList} constructor, empty so far.
+  /** {@code LinkedList} constructor, empty so far.
    */
   public LinkedList() { }
 
@@ -83,6 +82,18 @@ public class LinkedList<E> {
   public void clear() {
     first = last = null;
     size = 0;
+  }
+
+
+  /** Prints all elements, one per line. */
+  public void print() {
+    print(first);
+  }
+  private void print(Node<E> n) {
+    if (n != null) {
+      System.out.println(n.elem);
+      print(n.next);
+    }
   }
 
   /** Checks if the given element exists in the list.
